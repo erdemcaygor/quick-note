@@ -1,10 +1,10 @@
 import { jsPDF } from "jspdf";
 
 class FileExport {
-  createDoc = (textArr, fileName) => {
+  createDoc = (note) => {
     const doc = new jsPDF();
-    doc.text("Hello world!", 10, 10);
-    doc.save("a4.pdf");
+    doc.text(note, 10, 10);
+    doc.save("notes.pdf");
   };
 }
 

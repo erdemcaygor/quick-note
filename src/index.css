@@ -57,6 +57,7 @@ html, body {
 .download-icon-container {
     display: flex;
     justify-content: flex-end;
+    visibility: hidden;
 }
 
 .download-icon-container_icon {
