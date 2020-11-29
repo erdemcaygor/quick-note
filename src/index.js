@@ -5,6 +5,7 @@ import { fileExport } from "./file-export.js";
 class QuickNote {
   constructor() {
     this.startSpeechRecognition();
+    this.showHelperText = true;
   }
 
   startSpeechRecognition = () => {
@@ -12,8 +13,8 @@ class QuickNote {
     speechRecognitionModule.listen((words) => {
       const p = document.createElement("p");
       p.textContent = words;
+      if (this.showHelperText) this.showHelperText = false;
       wordsContainer.appendChild(p);
-      fileExport.createDoc();
     });
   };
 

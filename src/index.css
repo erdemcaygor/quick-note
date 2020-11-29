@@ -22,6 +22,7 @@ html, body {
     min-height: 100px;
     margin-top: 100px;
     margin-bottom: 100px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -30,7 +31,6 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
     font-size: 18px;
 }
 
@@ -45,4 +45,20 @@ html, body {
     list-style-type: disc;
     display: list-item;
     list-style-position: inside;
+}
+
+.notes_helper-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.download-icon-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.download-icon-container_icon {
+    cursor: pointer;
 }
