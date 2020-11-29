@@ -28,7 +28,14 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: [
+          // The `injectType`  option can be avoided because it is default behaviour
+          {
+            loader: "style-loader",
+            options: { insert: "head", injectType: "singletonStyleTag" },
+          },
+          "css-loader",
+        ],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,

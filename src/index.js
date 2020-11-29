@@ -30,7 +30,9 @@ class QuickNote {
     this.recognition.interimResults = true;
     this.recognition.addEventListener("result", (e) => {
       const { results } = e;
-      const words = Array.from(results).map((result) => result[0]);
+      const words = Array.from(results)
+        .map((result) => result[0])
+        .map((result) => result.transcript);
       console.log(words);
     });
     this.recognition.start();
