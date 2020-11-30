@@ -31,7 +31,8 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 24px;
+    font-family: 'Concert One', cursive;
 }
 
 .notes_words-container {
@@ -45,6 +46,7 @@ html, body {
     list-style-type: disc;
     display: list-item;
     list-style-position: inside;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .notes_helper-text-container {
@@ -52,6 +54,11 @@ html, body {
     align-items: center;
     justify-content: center;
     padding-top: 50px;
+}
+
+.notes_helper-text-container span {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .download-icon-container {
